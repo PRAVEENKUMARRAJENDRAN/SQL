@@ -4,6 +4,5 @@
 -- between them. It returns not only the matching rows but also any unmatched rows from either table involved 
 -- in the join.
 
-SELECT p.productname FROM products p OUTER JOIN orderdetails od join orders o 
-ON p.productid = od.productid AND 
-od.orderid =  o.orderid;
+SELECT p.productname, c.Description FROM products p CROSS JOIN categories c on p.categoryid = c.categoryid;
+
