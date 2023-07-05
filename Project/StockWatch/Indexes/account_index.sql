@@ -1,0 +1,1 @@
+CREATE Unique CLUSTERED INDEX "email_index" ON account(email);
